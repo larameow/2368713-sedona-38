@@ -12,7 +12,14 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -30,13 +37,51 @@ body {
   align-content: center;
 }
 .navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  text-align: center;
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+}
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+.navigation-link-search {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  padding: 22px 12px;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-link-favorite {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  padding: 22px 12px;
+  justify-content: center;
+  align-items: center;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
 }
 .main-index {
   color: #000000;
@@ -45,6 +90,16 @@ body {
   background-size: 1200px 485px;
   background-repeat: no-repeat;
   text-align: center;
+}
+.banner {
+  display: block;
+  margin: 0 auto;
+}
+.advantages-list {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 .advantage-title-white {
   font-size: 30px;
@@ -129,6 +184,18 @@ body {
   align-items: center;
   gap: 10px;
   background-repeat: no-repeat;
+}
+.page-footer.container {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+}
+.footer-social {
+  display: flex;
+  width: 142px;
+  height: 40px;
+  align-items: center;
+  flex-shrink: 0;
 }
 .footer-contacts-phone {
   font-size: 40px;
