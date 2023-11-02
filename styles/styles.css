@@ -37,7 +37,9 @@ body {
   align-content: center;
 }
 .navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: 95px 400px;
+  column-gap: 200px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -45,14 +47,16 @@ body {
   width: 140px;
   margin-right: 28px;
   margin-left: 70px;
+  align-items: stretch;
 }
 .navigation-list {
-  width: 380px;
-  margin: 0;
-  padding: 0;
+  color: #000000;
+  display: flex;
   list-style-type: none;
+  flex-wrap: nowrap;
 }
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -61,10 +65,7 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
-}
-.navigation-user {
-  max-width: 300px;
-  margin-left: auto;
+  padding: 20px 16px;
 }
 .navigation-link-search {
   width: 20px;
@@ -81,6 +82,14 @@ body {
   padding: 22px 12px;
   justify-content: center;
   align-items: center;
+}
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
 }
 .page-container {
   width: 1200px;
@@ -265,21 +274,39 @@ body {
 .catalog-filter {
   width: 5em;
   height: 2em;
-  background-color: blue;
   width: 150px;
   height: 157px;
 }
-.catalog-hotel-card {
+.catalog-filter-item {
+  list-style-type: none;
+  text-align: left;
+}
+.catalog-filter-group {
+  width: 150px;
+  height: 157px;
+  margin-right: 70px;
+}
+.hotels-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px;
+}
+.hotel-card {
   color: #000000;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  align-content: center;
-  box-sizing: border-box;
+  width: 300px;
+  height: 438px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+.hotel-card-title {
+  color: #000000;
 }
 .newsletter-catalog {
   width: 1200px;
