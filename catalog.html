@@ -19,8 +19,7 @@
     <li class="navigation-item">
       <a class="navigation-link" href="catalog.html">Гостиницы</a>
       </li>
-</ul>
-<ul class="navigation-list navigation-user">
+
   <li class="navigation-item">
     <a class="navigation-link" href="#">
       <span class="visually-hidden">
@@ -53,13 +52,14 @@
             <img class="icon" src="images/catalog/Vector.svg" width="12" height="12" alt="Домой">
           </li>
           <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">&#62;</a>
+          </li>
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
       </header>
         <h2 class="visually-hidden">Список преимуществ с фильтрами</h2>
-        <div class="catalog-container">
-          <div class="container-filter">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -84,8 +84,6 @@
                   </li>
                 </ul>
               </fieldset>
-            </div>
-            <div class="container-filter">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
@@ -109,19 +107,17 @@
                   </li>
                 </ul>
               </fieldset>
+              <button class="catalog-filter-button" type="submit">Применить</button>
             </form>
-            <button class="button" type="submit">Применить</button>
-          </div>
-          </div>
-          <div class="catalog-right-column">
-            <div class="sorting-container">
+      </div>
               <div class="select">
+                <h2 class="select-title">Найдено гостиниц:</h2>
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярные</option>
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
-              <a href="#" class="button button-light">
+              <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
               <a class="button" href="#">
@@ -131,9 +127,7 @@
                 <span class="visually-hidden">Во весь экран</span>
               </a>
               </div>
-              <div class ="catalog-hotel-card">
               <ul class="hotels-list">
-                <div class="hotel-card-item">
                 <li class="hotel-card">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
@@ -144,8 +138,6 @@
                   <a class="hotel-card-button button" href="#">Подробнее</a>
                   <a class="hotel-card-button button" href="#">В избранное</a>
                 </li>
-              </div>
-              <div class="hotel-card-item">
                 <li class="hotel-card">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
@@ -156,8 +148,6 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <a class="hotel-card-button button" href="#">В избранное</a>
                 </li>
-              </div>
-              <div class="hotel-card-item">
                 <li class="hotel-card">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
@@ -168,8 +158,6 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <a class="hotel-card-button button" href="#">В избранное</a>
                 </li>
-              </div>
-              <div class="hotel-card-item">
                 <li class="hotel-card">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
@@ -180,9 +168,7 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <a class="hotel-card-button button" href="#">В избранное</a>
                 </li>
-              </div>
               </ul>
-            </div>
               <ul class="pagination">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
@@ -225,19 +211,22 @@
           <div class="page-footer-container">
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="https://vk.com/htmlacademy">
+                <a class="button-social" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
+                  <img class="social-logo" src="images/footer-social/vk.svg" width="22" height="17" alt="vk логотип">
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href=" https://t.me/htmlacademy">
+                <a class="button-social" href=" https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
+                  <img class="social-logo" src="images/footer-social/telegram.svg" width="22" height="17" alt="телеграм логотип">
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
-                </a>
+                <img class="social-logo" src="images/footer-social/youtube.svg" width="22" height="17" alt="youtube логотип">
+              </a>
               </li>
               <li class="footer-social-item">
             <a class="footer-contacts-phone" href="tel:+78128121212"
