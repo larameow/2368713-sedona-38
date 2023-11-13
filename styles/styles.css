@@ -189,7 +189,7 @@ body {
   text-transform: uppercase;
   align-content: center;
 }
-.advantage-description-blue {
+.advantage-description-blue .advantage-description {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
