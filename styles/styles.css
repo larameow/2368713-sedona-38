@@ -118,6 +118,7 @@ body {
 }
 .page-container {
   width: 1200px;
+  color: #ffffff;
 }
 .main-container {
   flex-grow: 1;
