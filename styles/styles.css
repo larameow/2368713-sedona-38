@@ -39,7 +39,7 @@ body {
 .navigation {
   display: flex;
   height: 64px;
-  margin: 0 auto;
+  margin: 0 70px;
 }
 .navigation-logo {
   width: 140px;
@@ -62,8 +62,8 @@ body {
   text-align: center;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
   padding: 20px 16px;
+  text-decoration: none;
 }
 .search {
   width: 20px;
@@ -78,6 +78,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.navigation-item-button {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 4px;
+  background: var(--buttons-basic, #756157);
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navigation-link-button {
+  color: #ffffff;
+  text-decoration: none;
 }
 .breadcrumbs {
   display: flex;
@@ -126,8 +151,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   display: flex;
-  padding-top: 69px;
-  padding-bottom: 25px;
+  margin-top: 69px;
+  margin-bottom: 25px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -142,11 +167,9 @@ body {
   font-weight: 400;
   line-height: 26px;
   color: #333;
-  padding: 30px;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 69px;
-  margin-bottom: 0;
+  margin-bottom: 66px;
 }
 .advantage-item-content {
   background: #82b3d3;
@@ -802,6 +825,13 @@ body {
   height: 48px;
   align-items: center;
   flex-shrink: 0;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
 }
 .children {
   margin-left: 230px;
@@ -809,4 +839,63 @@ body {
 }
 .adults {
   margin-right: 46px;
+}
+.tooltip {
+  margin-top: 4px;
+  margin-left: 280px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83b3d3;
+  display: block;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 100%;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 5px 8px;
+  border-radius: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  z-index: 1;
+  margin-bottom: 6px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  content: "";
+  width: 216px;
+  height: 110px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
