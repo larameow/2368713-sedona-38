@@ -227,9 +227,6 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-.advantage-item-content-blue1:nth-child(2n) {
-  background-color: #83b3d3;
-}
 .advantage-item-content-blue2 {
   background: var(--background-second-1, rgba(131, 179, 211, 0.12));
   width: 400px;
@@ -244,9 +241,13 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-.advantage-item-content-blue2:nth-child(2n) {
-  background-color: #ffffff;
+.advantage-item-content-grey {
+  background: var(--background-second-2, rgba(131, 179, 211, 0.2));
 }
+.advantage-item-content-white {
+  background: #ffffff;
+}
+
 .advantages-title-blue {
   font-size: 24px;
   font-style: normal;
@@ -255,8 +256,18 @@ body {
   text-transform: uppercase;
   align-content: center;
 }
-.advantage-description-blue .advantage-description {
+.advantages-description-blue {
+  align-self: stretch;
   color: var(--texts-second, #333);
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.advantage-description {
+  color: #ffffff;
   text-align: center;
   font-family: PT Sans;
   font-size: 18px;
@@ -480,10 +491,12 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 0;
 }
 .name-price {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .hotel-card-type {
@@ -492,6 +505,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  margin-bottom: 0;
 }
 .hotel-card-button.details {
   display: flex;
@@ -587,6 +601,7 @@ body {
 }
 .pagination-link {
   text-decoration: none;
+  color: #ffffff;
 }
 .page-main-title {
   font-size: 30px;
