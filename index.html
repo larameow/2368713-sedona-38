@@ -264,5 +264,39 @@
       </ul>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-hotel">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="arrival-date" for="arrival-date">Дата Заезда:</label>
+              <input class="hotel-form-field field" type="date" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group">
+              <label class="date-of-departure" for="date-of-departure">Дата Выезда:</label>
+              <input class="hotel-form-field field" type="date" id="date-of-departure" name="date-of-departure" placeholder="1 сентября 2023">
+            </p>
+            <div class="buttons-modal">
+      <div class="modal-buttons">
+              <label class="adults" for="adults">Взрослые:</label>
+              <input class="hotel-modal-form-field" type="number" id="adults" name="adults" placeholder="2" data-max-count="10">
+            </p>
+          </div>
+          <div class="modal-buttons">
+              <label class="children" for="children">Дети:</label>
+              <input class="hotel-modal-form-field" type="number" id="children" name="children" placeholder="2" data-max-count="10">
+            </p>
+          </div>
+          </div>
+            <button class="button hotel-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
