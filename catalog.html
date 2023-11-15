@@ -7,40 +7,59 @@
   </head>
   <body>
   <header class="page-header">
-  <nav class="navigation">
-    <a><img class="navigation-logo" src="images/icons-header/logo.svg" href="index.html" width="140" height="70" alt="Логотип проекта «Седона»"></a>
-  <ul class="navigation-list">
-  <li class="navigation-item">
-  <a class="navigation-link" href="index.html">Главная</a>
-  </li>
-  <li class="navigation-item">
-    <a class="navigation-link" href="#">О Седоне</a>
-    </li>
-    <li class="navigation-item">
-      <a class="navigation-link" href="catalog.html">Гостиницы</a>
-      </li>
-
-  <li class="navigation-item">
-    <a class="navigation-link" href="#">
-      <span class="visually-hidden">
-        Поиск
-      </span>
-        <img class="search" src="images/icons-header/search.svg" width="44" height="64" alt="Поиск">
-    </a>
-  </li>
-  <li class="navigation-item">
-    <a class="navigation-link" href="#">
-      <span class="visually-hidden">
-        Избранное
-      </span>
-        <img class="favorite" src="images/icons-header/favorite.svg" width="44" height="64" alt="Избранное">
-    </a>
-    </li>
-    <li class="navigation-item">
-      <a class="navigation-link" href="#">Хочу сюда!</a>
-      </li>
-</ul>
-  </nav>
+    <nav class="navigation">
+      <a
+        ><img
+          class="navigation-logo"
+          src="images/icons-header/logo.svg"
+          width="140"
+          height="70"
+          alt="Логотип проекта «Седона»"
+        />
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+        </ul>
+        <div class="nav-list2">
+        <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden"> Поиск </span>
+            <img
+              class="search"
+              src="images/icons-header/search.svg"
+              width="44"
+              height="64"
+              alt="Поиск"
+            />
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden"> Избранное </span>
+            <img
+              class="favorite"
+              src="images/icons-header/favorite.svg"
+              width="44"
+              height="64"
+              alt="Избранное"
+            />
+          </a>
+        </li>
+        <li class="navigation-item-button">
+          <a class="navigation-link-button" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
   </header>
     <main class="main-inner">
       <div class="filter-form">
@@ -142,6 +161,7 @@
       </div>
               <div class="select">
                 <h2 class="select-title">Найдено гостиниц:</h2>
+                <div class="select-line">
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярные</option>
                 <option value="cheap">Сначала дешёвые</option>
@@ -160,6 +180,7 @@
                 <span class="visually-hidden">Во весь экран</span>
                 <img class="sorting-logo" src="images/sorting/full screen.svg" width="16" height="14" alt="Во весь экран">
               </a>
+            </div>
             </div>
               </div>
               <ul class="hotels-list">

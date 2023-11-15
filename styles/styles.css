@@ -44,14 +44,22 @@ body {
 .navigation-logo {
   width: 140px;
   margin-right: 30px;
-  margin-left: 70px;
   align-items: stretch;
 }
 .navigation-list {
   color: #000000;
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   align-items: center;
+  margin-right: auto;
+}
+.nav-list2 {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 0;
 }
 .navigation-link {
   display: block;
@@ -85,12 +93,8 @@ body {
   padding: 8px 50px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
   border-radius: 4px;
   background: var(--buttons-basic, #756157);
-  width: 160px;
-  height: 36px;
   text-align: center;
   font-family: PT Sans;
   font-size: 16px;
@@ -172,7 +176,6 @@ body {
   margin-bottom: 66px;
 }
 .advantage-item-content {
-  background: #82b3d3;
   display: flex;
   width: 400px;
   height: 385px;
@@ -181,6 +184,8 @@ body {
   justify-content: center;
   gap: 10px;
   box-sizing: border-box;
+  background: #82b3d3;
+  color: #ffffff;
 }
 .advantage-image-village {
   background-image: url("../images/advantages/Village.jpg");
@@ -189,6 +194,9 @@ body {
 }
 .blue-block {
   display: flex;
+}
+.advantage-title {
+  text-transform: uppercase;
 }
 .advantage-item-content-blue {
   background: var(--background-second-1, rgba(131, 179, 211, 0.12));
@@ -204,7 +212,42 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-.advantage-title-blue {
+
+.advantage-item-content-blue1 {
+  background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+.advantage-item-content-blue1:nth-child(2n) {
+  background-color: #83b3d3;
+}
+.advantage-item-content-blue2 {
+  background: var(--background-second-1, rgba(131, 179, 211, 0.12));
+  width: 400px;
+  height: 385px;
+  padding: 80px 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+.advantage-item-content-blue2:nth-child(2n) {
+  background-color: #ffffff;
+}
+.advantages-title-blue {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -213,12 +256,13 @@ body {
   align-content: center;
 }
 .advantage-description-blue .advantage-description {
+  color: var(--texts-second, #333);
+  text-align: center;
+  font-family: PT Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  color: #333;
   line-height: 21px;
-  align-content: center;
 }
 .advantage-image-devils-bridge {
   background-image: url("../images/devil's-bridge.jpg");
@@ -272,7 +316,6 @@ body {
   font-weight: 400;
   line-height: 40px;
   color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
   height: 40px;
   justify-content: center;
@@ -365,18 +408,26 @@ body {
   display: block;
   margin-left: 70px;
 }
+.select-line {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 70px;
+}
 .select-title {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 120% */
   text-transform: uppercase;
-  margin-right: auto;
 }
 .select {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  margin-left: 65px;
 }
 .select-control {
   height: 21px;
@@ -397,12 +448,15 @@ body {
   border: 2px solid var(--forms-elements-1, #e5e5e5);
   margin-right: 8px;
 }
+.button-sorting:nth-child(3n) {
+  margin-right: 0;
+}
 .hotels-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 20px;
+  margin: 50px 65px 60px 65px;
+  padding: 0px;
 }
 .hotel-card {
   color: #000000;
@@ -411,7 +465,7 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   list-style-type: none;
-  border: 2px solid var(--forms-elements-1, #e5e5e5);
+  border: 1px solid var(--forms-elements-1, #e5e5e5);
 }
 .hotel-card:nth-child(3n) {
   margin-right: 0;
@@ -515,6 +569,9 @@ body {
 .pagination {
   display: flex;
   justify-content: flex-start;
+  margin: 40px 70px 60px 70px;
+  padding: 0;
+  padding-right: 8px;
 }
 .pagination-item {
   color: #000000;
@@ -567,7 +624,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  margin-top: 54px;
+  margin: 54px 108px 0px 108px;
 }
 
 .range-filter-group {
