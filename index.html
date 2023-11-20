@@ -213,7 +213,7 @@
         </section>
         <section class="newsletter">
           <h2 class="page-main-title">Подпишитесь на рассылку</h2>
-          <p>
+          <p class="newsletter-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
@@ -223,7 +223,7 @@
           >
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input
-              class="field"
+              class="newsletter-field"
               placeholder="Ваш e-mail"
               type="email"
               name="newsletter-email"
@@ -231,7 +231,7 @@
               required
             />
             <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
+              <span class="newsletter-subscribe">Подписаться</span>
             </button>
           </form>
         </section>
@@ -241,7 +241,7 @@
       <div class="page-footer-container">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button-social" href="https://vk.com/htmlacademy">
+            <a class="button-social footer-social-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
               <img
                 class="social-logo"
@@ -253,7 +253,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button-social" href=" https://t.me/htmlacademy">
+            <a class="button-social footer-social-telegram" href=" https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
               <img
                 class="social-logo"
@@ -266,7 +266,7 @@
           </li>
           <li class="footer-social-item">
             <a
-              class="button-social"
+              class="button-social footer-social-youtube"
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <span class="visually-hidden">Ютуб</span>
@@ -352,16 +352,9 @@
                     type="button"
                     aria-labelledby="tooltip-label-date"
                   >
-                    <svg
-                      class="tooltip-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"
-                      />
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
                     </svg>
                   </button>
                   <span
